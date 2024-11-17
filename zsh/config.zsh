@@ -1,5 +1,6 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export XDG_CONFIG_HOME=$HOME/.dotfiles
 
 fpath=($ZSH/functions $fpath)
 
