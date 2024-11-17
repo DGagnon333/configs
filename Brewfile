@@ -12,6 +12,7 @@ brew 'spark'
 brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'wget'
+brew 'ack'
 
 cask '1password'
 cask 'messenger'
