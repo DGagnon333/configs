@@ -15,6 +15,8 @@ brew 'wget'
 brew 'ack'
 brew 'node'
 brew 'golangci-lint'
+brew 'ocaml'
+brew 'opam'
 
 cask '1password'
 cask 'messenger'
