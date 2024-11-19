@@ -13,6 +13,8 @@ brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'wget'
 brew 'ack'
+brew 'node'
+brew 'golangci-lint'
 
 cask '1password'
 cask 'messenger'
