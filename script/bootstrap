@@ -141,18 +141,6 @@ setup_gitconfig
 install_dotfiles
 
 
-# Custom installs
-setup_rust () {
-  if [ -f "$DOTFILES_ROOT/rust/install.sh" ]; then
-    info "Setting up Rust"
-    bash "$DOTFILES_ROOT/rust/install.sh"
-    success "Rust setup completed"
-  else
-    info "Rust setup script not found, skipping..."
-  fi
-}
-setup_rust
-
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
 then

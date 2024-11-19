@@ -1,3 +1,5 @@
+#!/bin/sh
+
 cat_all() {
     # Check if there are files in the current directory
     if ls * >/dev/null 2>&1; then
