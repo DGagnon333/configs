@@ -1,0 +1,15 @@
+cat_all() {
+    # Check if there are files in the current directory
+    if ls * >/dev/null 2>&1; then
+        for file in *; do
+            if [ -f "$file" ]; then
+                echo "=== $file ==="
+                cat "$file"
+                echo # Add a blank line for readability
+            fi
+        done
+    else
+        echo "No files found in the current directory."
+    fi
+}
+
