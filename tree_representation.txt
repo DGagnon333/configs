@@ -1,0 +1,115 @@
+.
+├── Brewfile
+├── Brewfile.lock.json
+├── LICENSE.md
+├── README.md
+├── bin
+│   ├── battery-status
+│   ├── dns-flush
+│   ├── dot
+│   ├── e
+│   ├── ee
+│   ├── git-all
+│   ├── git-amend
+│   ├── git-copy-branch-name
+│   ├── git-credit
+│   ├── git-delete-local-merged
+│   ├── git-edit-new
+│   ├── git-nuke
+│   ├── git-promote
+│   ├── git-rank-contributors
+│   ├── git-track
+│   ├── git-undo
+│   ├── git-unpushed
+│   ├── git-unpushed-stat
+│   ├── git-up
+│   ├── git-wtf
+│   ├── gitio
+│   ├── headers
+│   ├── search
+│   ├── set-defaults
+│   ├── todo
+│   └── yt
+├── docker
+│   └── aliases.zsh
+├── functions
+│   ├── _boom
+│   ├── _brew
+│   ├── _c
+│   ├── _git-rm
+│   ├── c
+│   ├── extract
+│   └── gf
+├── git
+│   ├── aliases.zsh
+│   ├── completion.zsh
+│   ├── gitconfig.local.symlink
+│   ├── gitconfig.local.symlink.example
+│   ├── gitconfig.symlink
+│   └── gitignore.symlink
+├── homebrew
+│   ├── install.sh
+│   └── path.zsh
+├── macos
+│   ├── set-defaults.sh
+│   └── set-hostname.sh
+├── nvim
+│   ├── LICENSE.md
+│   ├── README.md
+│   ├── doc
+│   │   ├── kickstart.txt
+│   │   └── tags
+│   ├── init.lua
+│   ├── lazy-lock.json
+│   └── lua
+│       ├── config
+│       ├── custom
+│       └── kickstart
+├── ocaml
+│   ├── aliases.zsh
+│   ├── env.zsh
+│   ├── install.sh
+│   ├── ocamlinit.symlink
+│   └── path.zsh
+├── ruby
+│   ├── aliases.zsh
+│   ├── completion.zsh
+│   ├── gemrc.symlink
+│   ├── irbrc.symlink
+│   └── rbenv.zsh
+├── rust
+│   ├── aliases.zsh
+│   ├── completions.zsh
+│   ├── install.sh
+│   ├── path.zsh
+│   └── rustfmt.toml.symlink
+├── script
+│   ├── bootstrap
+│   └── install
+├── system
+│   ├── _path.zsh
+│   ├── aliases.zsh
+│   ├── env.zsh
+│   ├── grc.zsh
+│   └── keys.zsh
+├── tmux
+│   ├── path.zsh
+│   └── tmux.symlink
+├── tree_representation.txt
+├── vim
+│   └── vimrc.symlink
+├── xcode
+│   └── aliases.zsh
+├── yarn
+│   └── path.zsh
+├── zsh
+│   ├── aliases.zsh
+│   ├── completion.zsh
+│   ├── config.zsh
+│   ├── fpath.zsh
+│   ├── prompt.zsh
+│   ├── window.zsh
+│   └── zshrc.symlink
+└── zshrc.symlink
+
+23 directories, 90 files
