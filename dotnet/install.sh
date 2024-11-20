@@ -103,7 +103,7 @@ fi
 echo "OmniSharp installed successfully."
 
 # Use XDG_CONFIG_HOME for dotfiles location
-DOTNET_PATH_FILE="${XDG_CONFIG_HOME:-$HOME/.dotfiles}/dotnet/path.zsh"
+DOTNET_PATH_FILE="${ZSH}/dotnet/path.zsh"
 
 echo "Setting OMNISHARP_PATH in $DOTNET_PATH_FILE..."
 mkdir -p "$(dirname "$DOTNET_PATH_FILE")"
