@@ -18,6 +18,7 @@ brew 'golangci-lint'
 brew 'ocaml'
 brew 'opam'
 brew 'mvn'
+brew 'poppler'
 
 cask '1password'
 cask 'messenger'
