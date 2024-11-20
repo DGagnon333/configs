@@ -3,6 +3,8 @@
 # Detect the OS
 OS=$(uname)
 
+source "$ZSH/functions/logging.sh"
+
 if [ "$OS" != "Darwin" ]; then
     echo "This script is intended for macOS (Darwin). Your system is $OS."
     exit 1
@@ -45,4 +47,16 @@ export PATH="$JAVA_HOME/bin:$PATH"
 JAVA_VERSION=$(java -version 2>&1 | head -n 1 | awk -F '"' '{print $2}')
 echo "Java $JAVA_VERSION has been installed and configured."
 echo "JAVA_HOME is set to $JAVA_HOME"
+
+if ! command -v sdk &>/dev/null; then
+	info "Installing sdkman..."
+	curl -s "https://get.sdkman.io" | bash
+	info "setting up sdkman..."
+	SDK_INSTALL_PATH = "$HOME/.sdkman/bin"
+	chmod +x "$SDK_INSTALL_PATH/sdkman-init.sh"
+	source "$SDK_INSTALL_PATH/sdkman-init.sh"
+	success "sdkman ready"
+else
+	info "sdkman already installed"
+fi
 

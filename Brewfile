@@ -17,6 +17,7 @@ brew 'node'
 brew 'golangci-lint'
 brew 'ocaml'
 brew 'opam'
+brew 'mvn'
 
 cask '1password'
 cask 'messenger'
