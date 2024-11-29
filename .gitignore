@@ -2,3 +2,4 @@ git/gitconfig.local.symlink
 Brewfile.lock.json
 .zsh_history
 configstore/
+swi-prolog/dir-history/
