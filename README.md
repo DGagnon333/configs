@@ -1,6 +1,138 @@
-# holman does dotfiles
+# Cross-Platform Dotfiles with Ansible
 
-Your dotfiles are how you personalize your system. These are mine.
+This repository contains my personal dotfiles and development environment setup, managed using Ansible for cross-platform compatibility. It provides a consistent development environment across MacOS, Linux, and Windows (WSL) systems.
+
+## Overview
+
+This dotfiles repository uses Ansible to automate the setup and configuration of:
+- Shell environment (zsh with custom configurations)
+- Text editors (Neovim)
+- Terminal multiplexer (tmux)
+- Git configuration
+- Programming language environments
+- Platform-specific tools and utilities
+
+## Prerequisites
+
+Before setting up these dotfiles, ensure you have:
+
+- Git (2.28 or newer)
+- Ansible (core 2.13 or newer)
+- MacOS: `brew install ansible`
+- Linux: `sudo apt install ansible` or equivalent
+- Windows: Install WSL2 first, then follow Linux instructions
+- Python 3.8 or newer
+
+## Directory Structure
+
+```
+.
+├── ansible/
+│   ├── playbooks/         # Main automation playbooks
+│   ├── roles/            # Role-based configurations
+│   ├── group_vars/       # Environment-specific variables
+│   └── host_vars/        # Host-specific variables
+├── config/
+│   ├── nvim/            # Neovim configuration
+│   ├── tmux/            # Tmux configuration
+│   ├── zsh/             # Zsh configuration files
+│   └── git/             # Git configuration and templates
+└── scripts/             # Utility scripts
+```
+
+## Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+```
+
+2. Run the setup script:
+```bash
+./scripts/setup.sh
+```
+
+3. Run the Ansible playbook:
+```bash
+ansible-playbook ansible/playbooks/setup.yml
+```
+
+## Customization
+
+### Adding New Configurations
+
+1. Create a new role in `ansible/roles/`:
+```bash
+ansible-galaxy init ansible/roles/new-tool
+```
+
+2. Add your configuration files to the role's `files/` or `templates/` directory
+
+3. Define tasks in `tasks/main.yml`
+
+4. Add the role to the main playbook
+
+### Modifying Existing Configurations
+
+- Shell (zsh): Edit `config/zsh/.zshrc`
+- Neovim: Modify files in `config/nvim/`
+- Tmux: Update `config/tmux/tmux.conf`
+- Git: Adjust `config/git/gitconfig`
+
+## Platform-Specific Notes
+
+### MacOS
+
+- Automatically installs Homebrew if not present
+- Configures MacOS-specific settings via `defaults write`
+- Installs GUI applications via Homebrew Cask
+
+### Linux
+
+- Supports Debian/Ubuntu and RHEL/CentOS
+- Handles package manager differences automatically
+- Configures specific Linux utilities and tools
+
+### Windows (WSL)
+
+- Requires Windows Subsystem for Linux 2
+- Additional setup steps for Windows interoperability
+- Handles path conversions and permissions
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Ansible Connection Errors**
+- Ensure SSH keys are properly set up
+- Check that ansible_connection is set to 'local' for local deployment
+
+2. **Platform-Specific Problems**
+- MacOS: Check XCode Command Line Tools installation
+- Linux: Verify package manager and repositories
+- WSL: Ensure WSL2 is properly configured
+
+### Getting Help
+
+If you encounter any issues:
+1. Check the [Issues](https://github.com/yourusername/dotfiles/issues) page
+2. Create a new issue with:
+- Your OS and version
+- Error messages
+- Steps to reproduce
+
+## Updates and Maintenance
+
+To update your environment:
+```bash
+cd ~/.dotfiles
+git pull
+ansible-playbook ansible/playbooks/setup.yml
+```
+
+Regular maintenance tasks are automated through Ansible playbooks. Run the update playbook periodically to keep your environment current.
+
 
 I was a little tired of having long alias files and everything strewn about
 (which is extremely common on other dotfiles projects, too). That led to this

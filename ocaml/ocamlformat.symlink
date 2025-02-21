@@ -1,0 +1,16 @@
+version = 0.26.2
+
+profile=conventional
+margin=80
+break-cases=toplevel
+space-around-records=true
+sequence-style=separator
+indicate-nested-or-patterns=space
+type-decl=sparse
+cases-exp-indent=2
+break-separators=after
+max-indent=2
+module-item-spacing=sparse
+wrap-comments=false
+break-struct=force
+

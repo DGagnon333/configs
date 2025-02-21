@@ -1,0 +1,78 @@
+2024-12-08 14:38:42,061 - semgrep.run_scan - DEBUG - semgrep version 1.97.0
+2024-12-08 14:38:42,067 - semgrep.config_resolver - DEBUG - Downloading config from https://semgrep.dev/c/auto
+2024-12-08 14:38:42,346 - semgrep.config_resolver - DEBUG - Failed to decode JSON: KeyError('rule_config')
+2024-12-08 14:38:42,347 - semgrep.config_resolver - DEBUG - Downloaded config from https://semgrep.dev/c/auto
+2024-12-08 14:38:42,348 - semgrep.config_resolver - DEBUG - Saving rules to /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/semgrep-mvv8kgef.rules
+2024-12-08 14:38:42,891 - semgrep.rule_lang - DEBUG - semgrep-core validation response: valid=False
+2024-12-08 14:38:42,891 - semgrep.rule_lang - DEBUG - run_rpc_validate failed: semgrep-core validation failed
+2024-12-08 14:38:44,584 - semgrep.config_resolver - DEBUG - loaded 1 configs in 2.516530990600586
+2024-12-08 14:38:44,632 - semgrep.metrics - DEBUG - Error in add_engine_config: name 'EngineType' is not defined
+2024-12-08 14:38:44,632 - semgrep.run_scan - VERBOSE - running 1054 rules from 1 config remote-registry_0
+2024-12-08 14:38:44,633 - semgrep.run_scan - VERBOSE - No .semgrepignore found. Using default .semgrepignore rules. See the docs for the list of default ignores: https://semgrep.dev/docs/cli-usage/#ignore-files
+2024-12-08 14:38:44,634 - semgrep.run_scan - VERBOSE - Rules:
+2024-12-08 14:38:44,634 - semgrep.run_scan - VERBOSE - <SKIPPED DATA (too many entries; use --max-log-list-entries)>
+2024-12-08 14:38:44,657 - semgrep.core_runner - DEBUG - Passing whole rules directly to semgrep_core
+2024-12-08 14:38:44,675 - semgrep.core_runner - DEBUG - Running Semgrep engine with command:
+2024-12-08 14:38:44,675 - semgrep.core_runner - DEBUG - /Users/derickgagnon/.local/share/nvim/mason/packages/semgrep/venv/lib/python3.13/site-packages/semgrep/bin/semgrep-core -json -rules /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/tmpi4l1v8zb.json -j 8 -targets /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/tmprf1qmk90 -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+2024-12-08 14:38:45,507 - semgrep.core_runner - DEBUG - --- semgrep-core stderr ---
+[00.06][[34mINFO[0m]: Executed as: /Users/derickgagnon/.local/share/nvim/mason/packages/semgrep/venv/lib/python3.13/site-packages/semgrep/bin/semgrep-core -json -rules /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/tmpi4l1v8zb.json -j 8 -targets /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/tmprf1qmk90 -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+[00.06][[34mINFO[0m]: Version: 1.97.0
+[00.06][[34mINFO[0m]: Parsing rules in /var/folders/l5/n8bzcl1n66565wg_x5z33qlm0000gn/T/tmpi4l1v8zb.json
+[00.72][[34mINFO[0m]: scan: processing 3 files (skipping 0), with 214 rules (skipping 0 )
+--- end semgrep-core stderr ---
+2024-12-08 14:38:45,511 - semgrep.core_runner - DEBUG - semgrep ran in 0:00:00.854474 on 1 files
+2024-12-08 14:38:45,512 - semgrep.core_runner - DEBUG - findings summary: 0 error, 0 warning, 0 info
+2024-12-08 14:38:45,532 - semgrep.app.auth - DEBUG - Getting API token from settings file
+2024-12-08 14:38:45,533 - semgrep.app.auth - DEBUG - No API token found in settings file
+2024-12-08 14:38:45,608 - semgrep.app.auth - DEBUG - Getting API token from settings file
+2024-12-08 14:38:45,608 - semgrep.app.auth - DEBUG - No API token found in settings file
+2024-12-08 14:38:45,609 - semgrep.output - VERBOSE - 
+========================================
+Files skipped:
+========================================
+
+  Always skipped by Semgrep:
+
+   • <none>
+
+  Skipped by .gitignore:
+  (Disable by passing --no-git-ignore)
+
+   • <all files not listed by `git ls-files` were skipped>
+
+  Skipped by .semgrepignore:
+  - https://semgrep.dev/docs/ignoring-files-folders-code/#understand-semgrep-defaults
+
+   • <none>
+
+  Skipped by --include patterns:
+
+   • <none>
+
+  Skipped by --exclude patterns:
+
+   • <none>
+
+  Files skipped due to insufficient read permissions:
+
+   • <none>
+
+  Skipped by limiting to files smaller than 1000000 bytes:
+  (Adjust with the --max-target-bytes flag)
+
+   • <none>
+
+  Partially analyzed due to parsing or internal Semgrep errors
+
+   • <none>
+
+2024-12-08 14:38:45,609 - semgrep.output - INFO - 
+(need more rules? `semgrep login` for additional free Semgrep Registry rules)
+
+Ran 165 rules on 1 file: 0 findings.
+2024-12-08 14:38:45,610 - semgrep.commands.scan - INFO - If Semgrep missed a finding, please send us feedback to let us know!
+See https://semgrep.dev/docs/reporting-false-negatives/
+2024-12-08 14:38:45,617 - semgrep.metrics - VERBOSE - Sending pseudonymous metrics since metrics are configured to AUTO and registry usage is True
+2024-12-08 14:38:45,617 - semgrep.metrics - DEBUG - Sending to https://metrics.semgrep.dev
+2024-12-08 14:38:46,003 - semgrep.metrics - DEBUG - response from https://metrics.semgrep.dev {'statusCode': 200, 'body': '{"sourceIp":"70.53.212.12","userAgent":"Semgrep/1.97.0 (command/unset)"}'}
+

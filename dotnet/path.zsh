@@ -1,3 +1,1 @@
-OMNISHARP_INSTALL_DIR="$HOME/.local/share/omnisharp"
-export OMNISHARP_PATH="$OMNISHARP_INSTALL_DIR"
-
+export OMNISHARP_PATH="/Users/derickgagnon/.local/share/omnisharp"
